@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +7,78 @@
     <title>придумать</title>
 </head>
 <body>
-    <!-- <header>
-        <img src="logo.jpg" width="70">
+    <h1>Первый неклассический котоковоркинг</h1>
+    <header>
+        <img src="photos/logo.jpg" width="70">
         <h1>kkkuusPlace/КусьPlace</h1>
         <button>мяв</button>
-    </header> -->
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#"> Главная </a></li>
-            <li><a href="#"> Бронирование </a></li>
-            <li><a href="#"> Наши котики </a></li>
-            <li><a href="#"> Отзывы </a></li>
-        </ul>
-    </nav>
-    <button class="menu">meow</button>
-    <div>
-        <div class="info">
-            <p>KkkuusPlace</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit animi, minus eveniet repudiandae saepe. Dolor vel repellat, accusamus porro facere eum sint quod? Vero facilis velit recusandae? Quos, repellendus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit molestiae ipsam reiciendis ad, adipisci cupiditate, necessitatibus ullam voluptatum totam provident aut. Voluptatum soluta quas maxime repudiandae labore esse harum?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga eum at maxime provident labore, minus deserunt unde. Minus ut voluptate quos pariatur earum distinctio perspiciatis voluptatibus incidunt voluptatum, quasi fugit.</p>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#"> Главная </a></li>
+                <li><a href="#"> Бронирование </a></li>
+                <li><a href="#"> Наши котики </a></li>
+                <li><a href="#"> Отзывы </a></li>
+            </ul>
+        </nav>
+        <button class="menu">meow</button>
+        <div>
+            <div class="info">
+                <p>KkkuusPlace</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit animi, minus eveniet repudiandae saepe. Dolor vel repellat, accusamus porro facere eum sint quod? Vero facilis velit recusandae? Quos, repellendus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit molestiae ipsam reiciendis ad, adipisci cupiditate, necessitatibus ullam voluptatum totam provident aut. Voluptatum soluta quas maxime repudiandae labore esse harum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga eum at maxime provident labore, minus deserunt unde. Minus ut voluptate quos pariatur earum distinctio perspiciatis voluptatibus incidunt voluptatum, quasi fugit.</p>
+            </div>
+            <div class="main-slide">
+                <img src="photos/1.jpg">
+                <img src="photos/2.jpg">
+                <img src="photos/3.jpg">
+                <img src="photos/4.jpg">
+            </div>
+            <div class="controls">
+                <button class="down-button"></button>
+                <button class="up-button"></button>
+              </div>
         </div>
-        <div class="main-slide">
-            <img src="photos/1.jpg">
-            <img src="photos/2.jpg">
-            <img src="photos/3.jpg">
-            <img src="photos/4.jpg">
-        </div>
-        <div class="controls">
-            <button class="down-button"></button>
-            <button class="up-button"></button>
-          </div>
-    </div>
-    <div>
+        <section>
+            <p>Важная смысловая часть только для этой страницы для первой лабораторной</p>
+        </section>
+        <article>
+            <p>Важный самостоятельный фрагмент информации для первой лабораторной</p>
+        </article>
+        <aside>
+            <p>Неважная дополнительная информация для первой лабораторной</p>
+            <p>Блок с псевдографикой</p>
+            <pre>
+                      |\      _,,,---,,_
+                ZZZzz /,`.-'`'    -.  ;-;;,_
+                     |,4-  ) )-,_. ,\ (  `'-'
+                    '---''(_/--'  `-'\_) 
+            </pre>
+            <pre>
+                Блок с кодом
+            <code>
+                def get_changed_dirs(git_path: Path, from_commit_hash: str, to_commit_hash: str) -> set[Path]:
+                    command = f'git -C {git_path} diff --dirstat=files,0 {from_commit_hash} {to_commit_hash}'
+                    output = subprocess.check_output(command, shell=True).decode('utf-8')
+                    print(output)
+                    changed_directories = [Path(git_path, line.split()[1]) for line in output.splitlines()]
+                    return set(changed_directories)
+            </code>
+            </pre>
+        </aside>
         
-        <div class="main-slide">
-            
-
-        </div>
-    </div>
-
+        <blockquote>
+            <br>Солнце светит — хорошо, не светит — тоже хорошо, я сам себе солнце. 
+            <br><sub>@Крош</sub>
+        </blockquote> 
+    </main>
     
-    <!-- <footer>
+    
+    <footer>
         Тут будут контакты и координаты, наверно, когда нибудь, но это не точно
-    </footer> -->
+    </footer>
 </body>
 </html>
