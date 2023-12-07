@@ -1,0 +1,166 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+  position: absolute;
+  background: #e5e5e5;
+  height: 100%;
+  width: 35%;
+  top: 0;
+  left: 0;
+}
+
+.sidebar div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar div h1 {
+  font: 2em 'Oswald', sans-serif;
+}
+
+.main_slide {
+  position: absolute;
+  height: 100%;
+  left: 35%;
+  width: 65%;
+}
+
+.main_slide div {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+    background: #e5e5e5;
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+#menu_icon,
+#menu_icon:before,
+#menu_icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu_icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu_icon {
+    float: right;
+}
+
+#menu_icon:before,
+#menu_icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu_icon:before {
+    top: -0.4em;
+}
+
+#menu_icon:after {
+    bottom: -0.4em;
+}
+
+nav input[type=checkbox]:checked + label #menu_icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu_icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu_icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+nav input:checked ~ #overlay {
+  position: fixed;
+  background: #e5e5e5;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    opacity: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    opacity: 1;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+#social_media li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.container {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
