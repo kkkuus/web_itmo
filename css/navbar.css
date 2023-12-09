@@ -62,3 +62,9 @@ nav ul li a:hover {
 /* main {
     background-color: #e5e5e5;
 } */
+
+@media screen and (width < 740px) {
+    #text_logo {
+        display: none;
+    }
+}
