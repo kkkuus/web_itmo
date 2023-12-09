@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slider_container {
+    margin-top: 8em;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: #acacac;
+    border-radius: 3em;
+    box-sizing: content-box;
+    height: 30em;
+}
+
+.slider {
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.prev_button,
+.next_button {
+    width: 3em;
+    background-color: transparent;
+    border: none;
+    color: #e5e5e5;
+    height: 100%;
+    cursor: pointer;
+}
+
+.prev_button {
+    float: left;
+}
+
+.next_button {
+    float: right;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+#photo_container {
+    flex-wrap: wrap;
+    margin-top: .3em;
+    gap: 1em;
+}
+
+#photo_container div {
+    transition: 1s;
+    text-align: center;
+}
+
+#photo_container img {
+    width: 20em;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, .25);
+}
+
+#photo_container img:hover {
+    transform: scale(1.1);
+    border: 2px solid #acacac;
+}
+
+
+/* .table {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    max-width:  100vh;
+    column-gap: 20px;
+    place-items: center;
+}
+  
+.column {
+    /* background-color: #444; */
+    /* color: #fff; */
+    /* border-radius: 5px; 
+    padding: 20px;
+    font-size: 1em;
+} */
+
+#table_container {
+    padding: 1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+table {
+    padding: 20px;
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: repeat(4, auto);
+  }
+  
+thead,
+tbody,
+tr {
+    display: contents;
+  }
+  
+th {
+    position: sticky;
+    top: 0;
+    background: #acacac;
+    text-align: left;
+    font-size: 1.2em;
+    /* color: white; */
+}
+  
+th:last-child {
+    border: 0;
+}
+  
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* color: #e5e5e5; */
+}
+  
+tr:nth-child(even) td {
+    background: #f8f6ff;
+}

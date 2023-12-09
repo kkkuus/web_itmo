@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em 'Oswald', sans-serif;
+    color: #1d1f20;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    background-color: #acacac;
+    width: 100%;
+    z-index: 100;
+    /* opacity: 95%; */
+}
+
+.logo img{
+    width: 75px;
+    padding: .3em;
+    border-radius: 50%;
+}
+
+.logo {
+    font: 2em 'Oswald', sans-serif;
+    color: #1d1f20;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 1em;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 .4em;
+}
+
+nav ul li a {
+    color: #1d1f20;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 1em 'Oswald', sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+#active {
+    color: #e5e5e5;
+}
+
+/* main {
+    background-color: #e5e5e5;
+} */
