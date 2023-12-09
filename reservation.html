@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="коворкинг, коты, котики, работа, бронирование, учеба">
+    <title>придумать</title>
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"> <img src="photos/logo.jpg" alt="kkkuusPlace"> </a> 
+        <a class="logo" href="index.html"> kkkuusPlace </a>
+        <nav>
+            <ul>
+                <li><a href='main.html'>Главная</a></li>
+                <li><a href='' id="active">Бронирование</a></li>
+                <li><a href=''>Наши котики</a></li>
+                <li><a href=''>Отзывы</a></li>
+                <li><a href=''>Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga harum similique voluptatum voluptatem atque iste odit sint ullam aliquid officia, obcaecati, aliquam non deserunt quasi. Illo architecto quisquam reprehenderit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus consectetur, cum velit adipisci sunt beatae numquam voluptates consequuntur reprehenderit molestiae quibusdam id tenetur alias pariatur animi nam, fuga nesciunt officiis!</h1> -->
+        <form action="">
+            <label for="name">
+                ФИО: <input type="text" id="name">
+            </label>
+            <label for="event">
+                Кратко опишите ваше мероприятие: <input type="text" id="event">
+            </label>
+            <label for="contacts">
+                Контакты для связи: <input type="text" id="contacts">
+            </label>
+            <input type="button" id="submit" value="Submit">
+        </form>
+
+        <table id="reservation" class="">
+            <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>мероприятие</th>
+                <th>Конктакты для связи</th>
+            </tr>
+            </thead>
+        </table>
+        
+    </main>
+    <footer>
+        <div class="page_load_time"></div>
+    </footer>
+    <script src="js/load.js"></script>
+    <script src="js/create_table.js"></script>
+</body>
+</html>
