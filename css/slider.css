@@ -1,0 +1,22 @@
+.flexslider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #acacac;
+    border-radius: 3em;
+    box-sizing: content-box;
+    height: 30em;
+}
+.slides {
+    display: flex;
+    background-color: #acacac;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.slides div {
+    flex: 0 0 100%;
+}
