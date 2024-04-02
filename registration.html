@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/temp.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/registration.css">
     <script src="js/load.js"></script>
 </head>
 <body>
@@ -18,17 +19,32 @@
             <ul>
                 <li><a href='main.html'>Главная</a></li>
                 <li><a href='reservation.html'>Бронирование</a></li>
-                <li><a href='cats.html'>Наши котики</a></li>
-                <li><a href='reviews.html'>Отзывы</a></li>
-                <li><a href='registration.html' id="active">Регистрация</a></li>
+                <li><a href='registration.html' id="active">Авторизация</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        COMING SOON        
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div> 
     </main>
     <footer>
         <div class="page_load_time"></div>
     </footer>
+    <script src="js/register.js"></script>
 </body>
 </html>

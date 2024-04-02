@@ -40,8 +40,6 @@ document.getElementById("submit").onclick=function() {
 
     localStorage.setItem(localStorage.length + 1, JSON.stringify(user));
     id++;
-    // localStorage.setItem('event', event_row);
-    // localStorage.setItem('contacts', contacts_row);
     return false;
 }
 

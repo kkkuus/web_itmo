@@ -5,6 +5,8 @@
     background-color: #acacac;
     border-color: #acacac;
     align-items: center;
+    font-size: 1.2em;
+
 }
 .slides {
     display: flex;

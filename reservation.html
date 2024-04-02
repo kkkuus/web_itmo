@@ -7,7 +7,7 @@
     <title>придумать</title>
     <link rel="stylesheet" href="css/reservation.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">    
     <script src="js/load.js"></script>
 </head>
 <body>
@@ -18,15 +18,21 @@
             <ul>
                 <li><a href='main.html'>Главная</a></li>
                 <li><a href='reservation.html' id="active">Бронирование</a></li>
-                <li><a href='cats.html'>Наши котики</a></li>
-                <li><a href='reviews.html'>Отзывы</a></li>
-                <li><a href='registration.html'>Регистрация</a></li>
+                <li><a href='registration.html'>Авторизация</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main>       
+        <h1>Наши залы</h1>
         
-        <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga harum similique voluptatum voluptatem atque iste odit sint ullam aliquid officia, obcaecati, aliquam non deserunt quasi. Illo architecto quisquam reprehenderit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus consectetur, cum velit adipisci sunt beatae numquam voluptates consequuntur reprehenderit molestiae quibusdam id tenetur alias pariatur animi nam, fuga nesciunt officiis!</h1> -->
+        <div class="container" id="photo_container">
+            <div><a href=""><img src="photos/coworking1.jpg" alt="Пример"></a></div>
+            <div><a href=""><img src="photos/coworking2.jpg" alt="Пример"></a></div>
+            <div><button><img src="photos/coworking3.png"></button></div>
+        </div>
+
+
+
         <form id="table_form" action="">
             <label for="name">
                 ФИО: <input type="text" id="name">
@@ -49,12 +55,16 @@
             </tr>
             </thead>
         </table>
-        
+    
+
     </main>
+
+
+
+
     <footer>
         <div class="page_load_time"></div>
     </footer>
-    <!-- <script src="js/load.js"></script> -->
     <script src="js/create_table.js"></script>
 </body>
 </html>
